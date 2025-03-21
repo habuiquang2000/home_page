@@ -38,39 +38,6 @@ const translations = {
     /** col-4 */
     weAccept: 'We Accept'
   },
-  VN: {
-    shipTo: 'Giao đến',
-    searchPlaceholder: 'Tìm kiếm...',
-    navTextHome: 'Trang chủ',
-    navTextProducts: 'Sản phẩm tùy chỉnh',
-    products: 'Sản phẩm',
-    addToCart: 'Thêm vào giỏ hàng',
-
-    // FOOTER CONTENT
-    /** col-1 */
-    phoneNumber: 'Số điện thoại',
-    needSupport: 'Cần hỗ trợ',
-    submitATicket: 'Gửi vé',
-
-    /** col-2 */
-    info: 'Thông tin',
-    support: 'Hỗ trợ',
-    contactUs: 'Liên hệ với chúng tôi',
-    orderTracking: 'Theo dõi đơn hàng',
-    FAQs: 'Câu hỏi thường gặp',
-    DMCA: 'DMCA',
-
-    /** col-3 */
-    policys: 'Chính sách',
-    privacyPolicy: 'Chính sách bảo mật',
-    termsOfService: 'Điều khoản dịch vụ',
-    shippingPolicy: 'Chính sách vận chuyển',
-    returnPolicy: 'Chính sách trả hàng',
-    refundPolicy: 'Chính sách hoàn tiền',
-
-    /** col-4 */
-    weAccept: 'Chúng tôi chấp nhận'
-  }
 };
 
 const switchLanguage = lang => {
