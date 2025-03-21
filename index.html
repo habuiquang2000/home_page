@@ -1,0 +1,900 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Family</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__layout">
+        <!-- HEADER SECTION START -->
+        <!-- {% if announcementBar %} -->
+        <section class="announcement">{{announcementBar}}</section>
+        <!-- {% endif %} -->
+        <header class="container d-flex align-items-center my-4">
+          <div class="left-group pl-2 pl-md-0">
+            <div id="openMenuBar" class="d-md-none menu-btn">
+              <svg
+                width="21px"
+                height="18px"
+                viewBox="0 0 14 14"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  fill="none"
+                  stroke="#212121"
+                  stroke-linecap="round"
+                  stroke-width="1.4"
+                >
+                  <path d="m.7 7h12.6" />
+                  <path d="m.7 12h8.19" />
+                  <path d="m.7 2h8.19" />
+                </g>
+              </svg>
+            </div>
+            <div id="menuBar" class="d-md-none sidenav">
+              <a href="javascript:void(0)" class="closebtn" id="closeMenuBar">
+                &times;
+              </a>
+              <a href="/" data-i18n="navTextHome"></a>
+              <a href="#" data-i18n="allProduct"></a>
+            </div>
+
+            <div class="logo d-flex">
+              <img
+                src="https://img.cloudimgs.net/rx/256x256/s2/s/64/a88fea1880fc6401.png"
+                alt="FamilyShirt Logo"
+              />
+            </div>
+            <div class="location d-none d-md-flex">
+              <span class="truck-icon">🚚</span>
+              <span class="location-text">
+                <span data-i18n="deliverTo"></span>
+                <br />
+                <strong id="location-text"></strong
+              ></span>
+            </div>
+            <div class="language-selector d-none d-md-block">
+              <button class="dropdown-toggle">
+                <img
+                  src="https://familyshirt.store/images/country-flag/vn.svg"
+                  alt="Vietnam Flag"
+                />
+              </button>
+              <ul class="dropdown-menu">
+                <li data-lang="EN">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlT-sOpqZc3Qx2pWRJ4y3ykE4HpOIlvREkJQ&s"
+                    alt="UK Flag"
+                  />
+                  English
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="right-group">
+            <a href="#">
+              <p class="cart mb-0"></p>
+              <span class="badge">3</span>
+            </a>
+          </div>
+          <div class="search-bar">
+            <input
+              type="text"
+              id="search-input"
+              data-i18n-placeholder="searchPlaceholder"
+              placeholder="Search..."
+            />
+            <button class="clear-btn" id="clear-btn" style="display: none">
+              &times;
+            </button>
+            <button class="search-btn">🔍</button>
+          </div>
+        </header>
+        <!-- HEADER SECTION END -->
+
+        <!-- BREADCRUMB SECTION START -->
+        <nav class="container d-none d-md-block">
+          <ul class="nav gap-4">
+            <li class="nav-item mr-3">
+              <a class="breadcrumb-link" href="/" data-i18n="navTextHome"></a>
+            </li>
+            <li class="nav-item">
+              <a class="breadcrumb-link" href="#" data-i18n="allProduct"></a>
+            </li>
+          </ul>
+        </nav>
+        <!-- BREADCRUMB SECTION END -->
+
+        <!-- CONTENT SECTION START -->
+        <main class="main container">
+          <section class="pt-4">
+            <h2 class="text-center text-uppercase" data-i18n="newArrival"></h2>
+
+            <div
+              class="row mt-3 px-3 swiper hompage-swiper-container-new-arrival"
+            >
+              <div class="swiper-wrapper pb-4">
+                <div class="card swiper-slide">
+                  <div class="product-item">
+                    <div class="img-product">
+                      <a href="">
+                        <img
+                          src="https://img.cloudimgs.net/rx/600x750,c_2,q_90,ofmt_webp/s4/l_p:3033267:c13565d4a2c08d8f/fl_cutter,fl_layer_apply/u_p:3033267:1e58e248c1699500/co_rgb:181818,e_colorize:100/fl_layer_apply/l_p:3033267:3ced136965318e61/fl_layer_apply/u_p:3033267:461a7797a9956f1c/fl_layer_apply/c_thumb,w_1280/f_jpg/v1/p/58329598/ee866482c26cf2cc7c6c663adc03b728/t/cbc92522ac4e1f19.jpg"
+                          loading="lazy"
+                          alt="BLOOD CUSTOM"
+                          title="BLOOD CUSTOM"
+                          draggable="false"
+                          ondragstart="return false"
+                        />
+                      </a>
+                    </div>
+                    <div class="pt-4">
+                      <h5 title="BLOOD CUSTOM" class="text-center">
+                        <a href="/vi/blood-custom">BLOOD CUSTOM</a>
+                      </h5>
+                      <h6
+                        class="d-flex flex-wrap w-100 justify-content-center align-items-center mb-0"
+                      >
+                        <span class="main-price mr-2">$42.95</span
+                        ><del class="old-price">$50.95</del>
+                      </h6>
+                      <div class="p-1 p-sm-2">
+                        <button
+                          type="button"
+                          class="btn p-1 p-sm-2 add-to-cart-btn text-uppercase btn-block mt-3"
+                        >
+                          <span class="fw-bold" data-i18n="addToCart"> </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="product-item">
+                    <div class="img-product">
+                      <a href="">
+                        <img
+                          src="https://img.cloudimgs.net/rx/600x750,c_2,q_90,ofmt_webp/s4/l_p:15349:390156:c3a8056475daabce/fl_cutter,fl_layer_apply/u_p:15349:390156:2d18c090b2f51137/co_rgb:181818,e_colorize:100/fl_layer_apply/l_p:15349:390156:065ad51cfc5eb0db/fl_layer_apply/u_p:15349:b3fbb6512405bb96/fl_layer_apply/c_thumb,w_1280/f_jpg/v1/p/5694741/eee85cfe9fe5464d54bace9448f0634a?_a=AAAH2GX"
+                          loading="lazy"
+                          alt="BLOOD CUSTOM"
+                          title="BLOOD CUSTOM"
+                          draggable="false"
+                          ondragstart="return false"
+                        />
+                      </a>
+                    </div>
+                    <div class="pt-4">
+                      <h5 title="BLOOD CUSTOM" class="text-center">
+                        <a href="/vi/blood-custom">BLOOD CUSTOM</a>
+                      </h5>
+                      <h6
+                        class="d-flex flex-wrap w-100 justify-content-center align-items-center mb-0"
+                      >
+                        <span class="main-price mr-2">$42.95</span
+                        ><del class="old-price">$50.95</del>
+                      </h6>
+                      <div class="p-1 p-sm-2">
+                        <button
+                          type="button"
+                          class="btn p-1 p-sm-2 add-to-cart-btn text-uppercase btn-block mt-3"
+                        >
+                          <span class="fw-bold" data-i18n="addToCart"> </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="product-item">
+                    <div class="img-product">
+                      <a href="">
+                        <img
+                          src="https://img.cloudimgs.net/rx/600x750,c_2,q_90,ofmt_webp/s4/l_p:3105952:848395672d227194/fl_cutter,fl_layer_apply/u_p:3105952:5c686d9586bdf838/co_rgb:181818,e_colorize:100/fl_layer_apply/l_p:3105952:80ecbd_sh/fl_layer_apply/u_p:3105952:49a4b356879b6fab/fl_layer_apply/c_thumb,w_1280/f_jpg/v1/p/5695088/37991636d4d7b171f0ec4b4f28a4eb34/t/e189e0b9c4379b54.jpg"
+                          loading="lazy"
+                          alt="BLOOD CUSTOM"
+                          title="BLOOD CUSTOM"
+                          draggable="false"
+                          ondragstart="return false"
+                        />
+                      </a>
+                    </div>
+                    <div class="pt-4">
+                      <h5 title="BLOOD CUSTOM" class="text-center">
+                        <a href="/vi/blood-custom">BLOOD CUSTOM</a>
+                      </h5>
+                      <h6
+                        class="d-flex flex-wrap w-100 justify-content-center align-items-center mb-0"
+                      >
+                        <span class="main-price mr-2">$42.95</span
+                        ><del class="old-price">$50.95</del>
+                      </h6>
+                      <div class="p-1 p-sm-2">
+                        <button
+                          type="button"
+                          class="btn p-1 p-sm-2 add-to-cart-btn text-uppercase btn-block mt-3"
+                        >
+                          <span class="fw-bold" data-i18n="addToCart"> </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="product-item">
+                    <div class="img-product">
+                      <a href="">
+                        <img
+                          src="https://img.cloudimgs.net/rx/600x750,c_2,q_90,ofmt_webp/s4/l_p:3110997:8f2061820ffb7ca0/fl_cutter,fl_layer_apply/u_p:3110997:7640f5b12b57d728/co_rgb:181818,e_colorize:100/fl_layer_apply/l_p:3110997:efe2055b07d7d7cb/fl_layer_apply/u_p:3110997:22569479cfcd21c3/fl_layer_apply/c_thumb,w_1280/f_jpg/v1/p/5666049/b91fcdd005085a61865d245d47202d7e?_a=AAAH2GX"
+                          loading="lazy"
+                          alt="BLOOD CUSTOM"
+                          title="BLOOD CUSTOM"
+                          draggable="false"
+                          ondragstart="return false"
+                        />
+                      </a>
+                    </div>
+                    <div class="pt-4">
+                      <h5 title="BLOOD CUSTOM" class="text-center">
+                        <a href="/vi/blood-custom">BLOOD CUSTOM</a>
+                      </h5>
+                      <h6
+                        class="d-flex flex-wrap w-100 justify-content-center align-items-center mb-0"
+                      >
+                        <span class="main-price mr-2">$42.95</span
+                        ><del class="old-price">$50.95</del>
+                      </h6>
+                      <div class="p-1 p-sm-2">
+                        <button
+                          type="button"
+                          class="btn p-1 p-sm-2 add-to-cart-btn text-uppercase btn-block mt-3"
+                        >
+                          <span class="fw-bold" data-i18n="addToCart"> </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="product-item">
+                    <div class="img-product">
+                      <a href="">
+                        <img
+                          src="https://img.cloudimgs.net/rx/600x750,c_2,q_90,ofmt_webp/s4/l_p:3033267:c13565d4a2c08d8f/fl_cutter,fl_layer_apply/u_p:3033267:1e58e248c1699500/co_rgb:181818,e_colorize:100/fl_layer_apply/l_p:3033267:3ced136965318e61/fl_layer_apply/u_p:3033267:461a7797a9956f1c/fl_layer_apply/c_thumb,w_1280/f_jpg/v1/p/58329598/ee866482c26cf2cc7c6c663adc03b728/t/cbc92522ac4e1f19.jpg"
+                          loading="lazy"
+                          alt="BLOOD CUSTOM"
+                          title="BLOOD CUSTOM"
+                          draggable="false"
+                          ondragstart="return false"
+                        />
+                      </a>
+                    </div>
+                    <div class="pt-4">
+                      <h5 title="BLOOD CUSTOM" class="text-center">
+                        <a href="/vi/blood-custom">BLOOD CUSTOM</a>
+                      </h5>
+                      <h6
+                        class="d-flex flex-wrap w-100 justify-content-center align-items-center mb-0"
+                      >
+                        <span class="main-price mr-2">$42.95</span
+                        ><del class="old-price">$50.95</del>
+                      </h6>
+                      <div class="p-1 p-sm-2">
+                        <button
+                          type="button"
+                          class="btn p-1 p-sm-2 add-to-cart-btn text-uppercase btn-block mt-3"
+                        >
+                          <span class="fw-bold" data-i18n="addToCart"> </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="product-item">
+                    <div class="img-product">
+                      <a href="">
+                        <img
+                          src="https://img.cloudimgs.net/rx/600x750,c_2,q_90,ofmt_webp/s4/l_p:15349:390156:c3a8056475daabce/fl_cutter,fl_layer_apply/u_p:15349:390156:2d18c090b2f51137/co_rgb:181818,e_colorize:100/fl_layer_apply/l_p:15349:390156:065ad51cfc5eb0db/fl_layer_apply/u_p:15349:b3fbb6512405bb96/fl_layer_apply/c_thumb,w_1280/f_jpg/v1/p/5694741/eee85cfe9fe5464d54bace9448f0634a?_a=AAAH2GX"
+                          loading="lazy"
+                          alt="BLOOD CUSTOM"
+                          title="BLOOD CUSTOM"
+                          draggable="false"
+                          ondragstart="return false"
+                        />
+                      </a>
+                    </div>
+                    <div class="pt-4">
+                      <h5 title="BLOOD CUSTOM" class="text-center">
+                        <a href="/vi/blood-custom">BLOOD CUSTOM</a>
+                      </h5>
+                      <h6
+                        class="d-flex flex-wrap w-100 justify-content-center align-items-center mb-0"
+                      >
+                        <span class="main-price mr-2">$42.95</span
+                        ><del class="old-price">$50.95</del>
+                      </h6>
+                      <div class="p-1 p-sm-2">
+                        <button
+                          type="button"
+                          class="btn p-1 p-sm-2 add-to-cart-btn text-uppercase btn-block mt-3"
+                        >
+                          <span class="fw-bold" data-i18n="addToCart"> </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="product-item">
+                    <div class="img-product">
+                      <a href="">
+                        <img
+                          src="https://img.cloudimgs.net/rx/600x750,c_2,q_90,ofmt_webp/s4/l_p:3105952:848395672d227194/fl_cutter,fl_layer_apply/u_p:3105952:5c686d9586bdf838/co_rgb:181818,e_colorize:100/fl_layer_apply/l_p:3105952:80ecbd_sh/fl_layer_apply/u_p:3105952:49a4b356879b6fab/fl_layer_apply/c_thumb,w_1280/f_jpg/v1/p/5695088/37991636d4d7b171f0ec4b4f28a4eb34/t/e189e0b9c4379b54.jpg"
+                          loading="lazy"
+                          alt="BLOOD CUSTOM"
+                          title="BLOOD CUSTOM"
+                          draggable="false"
+                          ondragstart="return false"
+                        />
+                      </a>
+                    </div>
+                    <div class="pt-4">
+                      <h5 title="BLOOD CUSTOM" class="text-center">
+                        <a href="/vi/blood-custom">BLOOD CUSTOM</a>
+                      </h5>
+                      <h6
+                        class="d-flex flex-wrap w-100 justify-content-center align-items-center mb-0"
+                      >
+                        <span class="main-price mr-2">$42.95</span
+                        ><del class="old-price">$50.95</del>
+                      </h6>
+                      <div class="p-1 p-sm-2">
+                        <button
+                          type="button"
+                          class="btn p-1 p-sm-2 add-to-cart-btn text-uppercase btn-block mt-3"
+                        >
+                          <span class="fw-bold" data-i18n="addToCart"> </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="product-item">
+                    <div class="img-product">
+                      <a href="">
+                        <img
+                          src="https://img.cloudimgs.net/rx/600x750,c_2,q_90,ofmt_webp/s4/l_p:3110997:8f2061820ffb7ca0/fl_cutter,fl_layer_apply/u_p:3110997:7640f5b12b57d728/co_rgb:181818,e_colorize:100/fl_layer_apply/l_p:3110997:efe2055b07d7d7cb/fl_layer_apply/u_p:3110997:22569479cfcd21c3/fl_layer_apply/c_thumb,w_1280/f_jpg/v1/p/5666049/b91fcdd005085a61865d245d47202d7e?_a=AAAH2GX"
+                          loading="lazy"
+                          alt="BLOOD CUSTOM"
+                          title="BLOOD CUSTOM"
+                          draggable="false"
+                          ondragstart="return false"
+                        />
+                      </a>
+                    </div>
+                    <div class="pt-4">
+                      <h5 title="BLOOD CUSTOM" class="text-center">
+                        <a href="/vi/blood-custom">BLOOD CUSTOM</a>
+                      </h5>
+                      <h6
+                        class="d-flex flex-wrap w-100 justify-content-center align-items-center mb-0"
+                      >
+                        <span class="main-price mr-2">$42.95</span
+                        ><del class="old-price">$50.95</del>
+                      </h6>
+                      <div class="p-1 p-sm-2">
+                        <button
+                          type="button"
+                          class="btn p-1 p-sm-2 add-to-cart-btn text-uppercase btn-block mt-3"
+                        >
+                          <span class="fw-bold" data-i18n="addToCart"></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Navigation buttons -->
+              <div
+                class="swiper-button-next hompage-swiper-button-next-new-arrival"
+              ></div>
+              <div
+                class="swiper-button-prev hompage-swiper-button-prev-new-arrival"
+              ></div>
+              <!-- Pagination -->
+              <div
+                class="swiper-pagination hompage-swiper-pagination-new-arrival"
+              ></div>
+            </div>
+          </section>
+
+          <section class="pt-4 mt-4">
+            <h2 class="text-center text-uppercase" data-i18n="bestSeller"></h2>
+
+            <div
+              class="row mt-3 px-3 swiper hompage-swiper-container-best-sell"
+            >
+              <div class="swiper-wrapper pb-4">
+                <div class="card swiper-slide">
+                  <div class="product-item">
+                    <div class="img-product">
+                      <a href="">
+                        <img
+                          src="https://img.cloudimgs.net/rx/600x750,c_2,q_90,ofmt_webp/s4/l_p:3033267:c13565d4a2c08d8f/fl_cutter,fl_layer_apply/u_p:3033267:1e58e248c1699500/co_rgb:181818,e_colorize:100/fl_layer_apply/l_p:3033267:3ced136965318e61/fl_layer_apply/u_p:3033267:461a7797a9956f1c/fl_layer_apply/c_thumb,w_1280/f_jpg/v1/p/58329598/ee866482c26cf2cc7c6c663adc03b728/t/cbc92522ac4e1f19.jpg"
+                          loading="lazy"
+                          alt="BLOOD CUSTOM"
+                          title="BLOOD CUSTOM"
+                          draggable="false"
+                          ondragstart="return false"
+                        />
+                      </a>
+                    </div>
+                    <div class="pt-4">
+                      <h5 title="BLOOD CUSTOM" class="text-center">
+                        <a href="/vi/blood-custom">BLOOD CUSTOM</a>
+                      </h5>
+                      <h6
+                        class="d-flex flex-wrap w-100 justify-content-center align-items-center mb-0"
+                      >
+                        <span class="main-price mr-2">$42.95</span
+                        ><del class="old-price">$50.95</del>
+                      </h6>
+                      <div class="p-1 p-sm-2">
+                        <button
+                          type="button"
+                          class="btn p-1 p-sm-2 add-to-cart-btn text-uppercase btn-block mt-3"
+                        >
+                          <span class="fw-bold" data-i18n="addToCart"> </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="product-item">
+                    <div class="img-product">
+                      <a href="">
+                        <img
+                          src="https://img.cloudimgs.net/rx/600x750,c_2,q_90,ofmt_webp/s4/l_p:15349:390156:c3a8056475daabce/fl_cutter,fl_layer_apply/u_p:15349:390156:2d18c090b2f51137/co_rgb:181818,e_colorize:100/fl_layer_apply/l_p:15349:390156:065ad51cfc5eb0db/fl_layer_apply/u_p:15349:b3fbb6512405bb96/fl_layer_apply/c_thumb,w_1280/f_jpg/v1/p/5694741/eee85cfe9fe5464d54bace9448f0634a?_a=AAAH2GX"
+                          loading="lazy"
+                          alt="BLOOD CUSTOM"
+                          title="BLOOD CUSTOM"
+                          draggable="false"
+                          ondragstart="return false"
+                        />
+                      </a>
+                    </div>
+                    <div class="pt-4">
+                      <h5 title="BLOOD CUSTOM" class="text-center">
+                        <a href="/vi/blood-custom">BLOOD CUSTOM</a>
+                      </h5>
+                      <h6
+                        class="d-flex flex-wrap w-100 justify-content-center align-items-center mb-0"
+                      >
+                        <span class="main-price mr-2">$42.95</span
+                        ><del class="old-price">$50.95</del>
+                      </h6>
+                      <div class="p-1 p-sm-2">
+                        <button
+                          type="button"
+                          class="btn p-1 p-sm-2 add-to-cart-btn text-uppercase btn-block mt-3"
+                        >
+                          <span class="fw-bold" data-i18n="addToCart"> </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="product-item">
+                    <div class="img-product">
+                      <a href="">
+                        <img
+                          src="https://img.cloudimgs.net/rx/600x750,c_2,q_90,ofmt_webp/s4/l_p:3105952:848395672d227194/fl_cutter,fl_layer_apply/u_p:3105952:5c686d9586bdf838/co_rgb:181818,e_colorize:100/fl_layer_apply/l_p:3105952:80ecbd_sh/fl_layer_apply/u_p:3105952:49a4b356879b6fab/fl_layer_apply/c_thumb,w_1280/f_jpg/v1/p/5695088/37991636d4d7b171f0ec4b4f28a4eb34/t/e189e0b9c4379b54.jpg"
+                          loading="lazy"
+                          alt="BLOOD CUSTOM"
+                          title="BLOOD CUSTOM"
+                          draggable="false"
+                          ondragstart="return false"
+                        />
+                      </a>
+                    </div>
+                    <div class="pt-4">
+                      <h5 title="BLOOD CUSTOM" class="text-center">
+                        <a href="/vi/blood-custom">BLOOD CUSTOM</a>
+                      </h5>
+                      <h6
+                        class="d-flex flex-wrap w-100 justify-content-center align-items-center mb-0"
+                      >
+                        <span class="main-price mr-2">$42.95</span
+                        ><del class="old-price">$50.95</del>
+                      </h6>
+                      <div class="p-1 p-sm-2">
+                        <button
+                          type="button"
+                          class="btn p-1 p-sm-2 add-to-cart-btn text-uppercase btn-block mt-3"
+                        >
+                          <span class="fw-bold" data-i18n="addToCart"> </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="product-item">
+                    <div class="img-product">
+                      <a href="">
+                        <img
+                          src="https://img.cloudimgs.net/rx/600x750,c_2,q_90,ofmt_webp/s4/l_p:3110997:8f2061820ffb7ca0/fl_cutter,fl_layer_apply/u_p:3110997:7640f5b12b57d728/co_rgb:181818,e_colorize:100/fl_layer_apply/l_p:3110997:efe2055b07d7d7cb/fl_layer_apply/u_p:3110997:22569479cfcd21c3/fl_layer_apply/c_thumb,w_1280/f_jpg/v1/p/5666049/b91fcdd005085a61865d245d47202d7e?_a=AAAH2GX"
+                          loading="lazy"
+                          alt="BLOOD CUSTOM"
+                          title="BLOOD CUSTOM"
+                          draggable="false"
+                          ondragstart="return false"
+                        />
+                      </a>
+                    </div>
+                    <div class="pt-4">
+                      <h5 title="BLOOD CUSTOM" class="text-center">
+                        <a href="/vi/blood-custom">BLOOD CUSTOM</a>
+                      </h5>
+                      <h6
+                        class="d-flex flex-wrap w-100 justify-content-center align-items-center mb-0"
+                      >
+                        <span class="main-price mr-2">$42.95</span
+                        ><del class="old-price">$50.95</del>
+                      </h6>
+                      <div class="p-1 p-sm-2">
+                        <button
+                          type="button"
+                          class="btn p-1 p-sm-2 add-to-cart-btn text-uppercase btn-block mt-3"
+                        >
+                          <span class="fw-bold" data-i18n="addToCart"> </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="product-item">
+                    <div class="img-product">
+                      <a href="">
+                        <img
+                          src="https://img.cloudimgs.net/rx/600x750,c_2,q_90,ofmt_webp/s4/l_p:3033267:c13565d4a2c08d8f/fl_cutter,fl_layer_apply/u_p:3033267:1e58e248c1699500/co_rgb:181818,e_colorize:100/fl_layer_apply/l_p:3033267:3ced136965318e61/fl_layer_apply/u_p:3033267:461a7797a9956f1c/fl_layer_apply/c_thumb,w_1280/f_jpg/v1/p/58329598/ee866482c26cf2cc7c6c663adc03b728/t/cbc92522ac4e1f19.jpg"
+                          loading="lazy"
+                          alt="BLOOD CUSTOM"
+                          title="BLOOD CUSTOM"
+                          draggable="false"
+                          ondragstart="return false"
+                        />
+                      </a>
+                    </div>
+                    <div class="pt-4">
+                      <h5 title="BLOOD CUSTOM" class="text-center">
+                        <a href="/vi/blood-custom">BLOOD CUSTOM</a>
+                      </h5>
+                      <h6
+                        class="d-flex flex-wrap w-100 justify-content-center align-items-center mb-0"
+                      >
+                        <span class="main-price mr-2">$42.95</span
+                        ><del class="old-price">$50.95</del>
+                      </h6>
+                      <div class="p-1 p-sm-2">
+                        <button
+                          type="button"
+                          class="btn p-1 p-sm-2 add-to-cart-btn text-uppercase btn-block mt-3"
+                        >
+                          <span class="fw-bold" data-i18n="addToCart"> </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="product-item">
+                    <div class="img-product">
+                      <a href="">
+                        <img
+                          src="https://img.cloudimgs.net/rx/600x750,c_2,q_90,ofmt_webp/s4/l_p:15349:390156:c3a8056475daabce/fl_cutter,fl_layer_apply/u_p:15349:390156:2d18c090b2f51137/co_rgb:181818,e_colorize:100/fl_layer_apply/l_p:15349:390156:065ad51cfc5eb0db/fl_layer_apply/u_p:15349:b3fbb6512405bb96/fl_layer_apply/c_thumb,w_1280/f_jpg/v1/p/5694741/eee85cfe9fe5464d54bace9448f0634a?_a=AAAH2GX"
+                          loading="lazy"
+                          alt="BLOOD CUSTOM"
+                          title="BLOOD CUSTOM"
+                          draggable="false"
+                          ondragstart="return false"
+                        />
+                      </a>
+                    </div>
+                    <div class="pt-4">
+                      <h5 title="BLOOD CUSTOM" class="text-center">
+                        <a href="/vi/blood-custom">BLOOD CUSTOM</a>
+                      </h5>
+                      <h6
+                        class="d-flex flex-wrap w-100 justify-content-center align-items-center mb-0"
+                      >
+                        <span class="main-price mr-2">$42.95</span
+                        ><del class="old-price">$50.95</del>
+                      </h6>
+                      <div class="p-1 p-sm-2">
+                        <button
+                          type="button"
+                          class="btn p-1 p-sm-2 add-to-cart-btn text-uppercase btn-block mt-3"
+                        >
+                          <span class="fw-bold" data-i18n="addToCart"> </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="product-item">
+                    <div class="img-product">
+                      <a href="">
+                        <img
+                          src="https://img.cloudimgs.net/rx/600x750,c_2,q_90,ofmt_webp/s4/l_p:3105952:848395672d227194/fl_cutter,fl_layer_apply/u_p:3105952:5c686d9586bdf838/co_rgb:181818,e_colorize:100/fl_layer_apply/l_p:3105952:80ecbd_sh/fl_layer_apply/u_p:3105952:49a4b356879b6fab/fl_layer_apply/c_thumb,w_1280/f_jpg/v1/p/5695088/37991636d4d7b171f0ec4b4f28a4eb34/t/e189e0b9c4379b54.jpg"
+                          loading="lazy"
+                          alt="BLOOD CUSTOM"
+                          title="BLOOD CUSTOM"
+                          draggable="false"
+                          ondragstart="return false"
+                        />
+                      </a>
+                    </div>
+                    <div class="pt-4">
+                      <h5 title="BLOOD CUSTOM" class="text-center">
+                        <a href="/vi/blood-custom">BLOOD CUSTOM</a>
+                      </h5>
+                      <h6
+                        class="d-flex flex-wrap w-100 justify-content-center align-items-center mb-0"
+                      >
+                        <span class="main-price mr-2">$42.95</span
+                        ><del class="old-price">$50.95</del>
+                      </h6>
+                      <div class="p-1 p-sm-2">
+                        <button
+                          type="button"
+                          class="btn p-1 p-sm-2 add-to-cart-btn text-uppercase btn-block mt-3"
+                        >
+                          <span class="fw-bold" data-i18n="addToCart"> </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="product-item">
+                    <div class="img-product">
+                      <a href="">
+                        <img
+                          src="https://img.cloudimgs.net/rx/600x750,c_2,q_90,ofmt_webp/s4/l_p:3110997:8f2061820ffb7ca0/fl_cutter,fl_layer_apply/u_p:3110997:7640f5b12b57d728/co_rgb:181818,e_colorize:100/fl_layer_apply/l_p:3110997:efe2055b07d7d7cb/fl_layer_apply/u_p:3110997:22569479cfcd21c3/fl_layer_apply/c_thumb,w_1280/f_jpg/v1/p/5666049/b91fcdd005085a61865d245d47202d7e?_a=AAAH2GX"
+                          loading="lazy"
+                          alt="BLOOD CUSTOM"
+                          title="BLOOD CUSTOM"
+                          draggable="false"
+                          ondragstart="return false"
+                        />
+                      </a>
+                    </div>
+                    <div class="pt-4">
+                      <h5 title="BLOOD CUSTOM" class="text-center">
+                        <a href="/vi/blood-custom">BLOOD CUSTOM</a>
+                      </h5>
+                      <h6
+                        class="d-flex flex-wrap w-100 justify-content-center align-items-center mb-0"
+                      >
+                        <span class="main-price mr-2">$42.95</span
+                        ><del class="old-price">$50.95</del>
+                      </h6>
+                      <div class="p-1 p-sm-2">
+                        <button
+                          type="button"
+                          class="btn p-1 p-sm-2 add-to-cart-btn text-uppercase btn-block mt-3"
+                        >
+                          <span class="fw-bold" data-i18n="addToCart"></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Navigation buttons -->
+              <div
+                class="swiper-button-next hompage-swiper-button-next-best-sell"
+              ></div>
+              <div
+                class="swiper-button-prev hompage-swiper-button-prev-best-sell"
+              ></div>
+              <!-- Pagination -->
+              <div
+                class="swiper-pagination hompage-swiper-pagination-best-sell"
+              ></div>
+            </div>
+          </section>
+        </main>
+        <!-- CONTENT SECTION END -->
+
+        <!-- FOOTER SECTION START -->
+        <footer class="container-fluid">
+          <div
+            class="container row d-flex flex-wrap text-center text-lg-left mb-4"
+          >
+            <div class="order-lg-2 row col-12 col-md-6 col-lg-5 mx-0">
+              <div class="col-12 col-md-6 pt-5">
+                <p class="text-uppercase font-weight-bold mb-0">
+                  <span data-i18n="info"></span>
+                  &amp;
+                  <span data-i18n="support"></span>
+                </p>
+                <div
+                  class="pt-3 w-100 w-md-auto site-link font-weight-500 text-capitalize"
+                >
+                  <a href="/vi/page/about" class="">
+                    <span data-i18n="contactUs"></span>
+                  </a>
+                </div>
+                <div
+                  class="pt-3 w-100 w-md-auto site-link font-weight-500 text-capitalize"
+                >
+                  <a href="/vi/order/track" class="">
+                    <span data-i18n="orderTracking"></span>
+                  </a>
+                </div>
+                <div
+                  class="pt-3 w-100 w-md-auto site-link font-weight-500 text-capitalize"
+                >
+                  <a href="/vi/page/faq" class="">
+                    <span data-i18n="FAQs"></span>
+                  </a>
+                </div>
+                <div
+                  class="pt-3 w-100 w-md-auto site-link font-weight-500 text-capitalize"
+                >
+                  <a href="/vi/page/contact-us" class="">
+                    <span data-i18n="DMCA"></span>
+                  </a>
+                </div>
+              </div>
+
+              <!--  -->
+              <div class="col-12 col-md-6 pt-5">
+                <p class="text-uppercase font-weight-bold mb-0">
+                  <span data-i18n="polices"></span>
+                </p>
+                <div
+                  class="pt-3 w-100 w-md-auto site-link font-weight-500 text-capitalize"
+                >
+                  <a href="/vi/page/return-policy" class="">
+                    <span data-i18n="privacyPolicy"></span>
+                  </a>
+                </div>
+                <div
+                  class="pt-3 w-100 w-md-auto site-link font-weight-500 text-capitalize"
+                >
+                  <a href="/vi/page/shipping-policy" class="">
+                    <span data-i18n="termsOfService"></span>
+                  </a>
+                </div>
+                <div
+                  class="pt-3 w-100 w-md-auto site-link font-weight-500 text-capitalize"
+                >
+                  <a href="/vi/page/terms-of-service" class="">
+                    <span data-i18n="shippingPolicy"></span>
+                  </a>
+                </div>
+                <div
+                  class="pt-3 w-100 w-md-auto site-link font-weight-500 text-capitalize"
+                >
+                  <a href="/vi/page/privacy" class="">
+                    <span data-i18n="returnPolicy"></span>
+                  </a>
+                </div>
+                <div
+                  class="pt-3 w-100 w-md-auto site-link font-weight-500 text-capitalize"
+                >
+                  <a href="/vi/page/dmca" class="">
+                    <span data-i18n="refundPolicy"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!--  -->
+            <div class="order-lg-1 col-12 col-md-6 col-lg-3 pt-5 px-0">
+              <a
+                href="/vi"
+                class="site-logo nuxt-link-exact-active nuxt-link-active"
+                aria-current="page"
+              >
+                <img
+                  src="https://img.cloudimgs.net/rx/256x256/s2/s/64/a88fea1880fc6401.png"
+                  alt="Family Shirt"
+                  loading="lazy"
+                />
+              </a>
+              <div class="contact-text pt-3">
+                <div
+                  class="d-flex align-items-center justify-content-center justify-content-lg-start"
+                >
+                  <span class="font-weight-500" data-i18n="phoneNumber"></span
+                  >:&nbsp;
+                  <span>+84 333 020 842</span>
+                </div>
+                <p class="mt-1">
+                  <span class="font-weight-500">
+                    <span data-i18n="needSupport"></span>?
+
+                    <a href="/vi/page/contact-us" class="text-primary">
+                      <span data-i18n="submitATicket"></span>?
+                    </a></span
+                  >
+                </p>
+                <!---->
+              </div>
+            </div>
+
+            <!--  -->
+            <div class="order-lg-3 col-12 col-md-6 col-lg-4 pt-5">
+              <div>
+                <p class="font-small font-weight-bold mt-3 mb-1 text-uppercase">
+                  <span data-i18n="weAccept"></span>
+                </p>
+                <div
+                  class="d-flex justify-content-center justify-content-lg-start"
+                >
+                  <div class="icon-card pr-2">
+                    <img src="/public/assets/images/PayPal.png" />
+                  </div>
+                  <div class="icon-card pr-2">
+                    <img src="/public/assets/images/MasterCard.png" />
+                  </div>
+                  <div class="icon-card pr-2">
+                    <img src="/public/assets/images/Visa.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="copyright border-top py-3">
+            <div class="container">
+              <small class="font-weight-500"
+                >Copyright © familyshirt.store - All rights reserved.</small
+              >
+            </div>
+          </div>
+          <div></div>
+        </footer>
+        <!-- FOOTER SECTION END -->
+      </div>
+    </div>
+
+    <!-- JQUERY SECTION -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
